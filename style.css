@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html,
+#container {
+    height: 100%;
+    width: 100%;
+}
+
+label {
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    display: block;
+}
+
+#container {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 94%;
+    width: 65%;
+    background: ghostwhite;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 5px 5px 5px rgba(77, 74, 74, 0.459);
+    margin: 0px auto 0px auto;
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.container h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.Top,
+.Bottom {
+    width: 100%;
+    margin-top: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Top div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* border: 2px solid red; */
+}
+
+.pad {
+    padding: 14px 9px;
+    font-size: 15px;
+    width: 70%;
+}
+
+.pad::placeholder {
+
+    /* font-size: 17px; */
+}
+
+
+
+select {
+    margin-top: 6px;
+    width: 70%;
+    /* height: 16px; */
+    /* font-size: 10.5px; */
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(240, 189, 218);
+    border-radius: 3px;
+    padding-left: 5px;
+    padding: 7px 8px;
+
+}
+
+option {
+    font-size: 15px;
+}
+
+textarea {
+    width: 100%;
+    padding: 4px;
+    font-size: 17px;
+}
+
+input {
+    width: 20vw;
+    margin: 6px 0px 12px 0px;
+    height: 14px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(240, 189, 218);
+    border-radius: 3px;
+    font-size: 9px;
+    padding-left: 5px;
+}
+
+input:focus {
+    outline: lawngreen;
+}
+
+.address {
+    margin-bottom: 5px;
+}
+
+#address {
+    margin-top: 3px;
+}
+
+.address textarea {
+    height: 70px;
+    resize: none;
+}
+
+.Bottom div {
+    width: 50%;
+}
+
+#date_bottom div {
+    width: 50%;
+}
+
+.resume {
+    padding: 5px;
+    font-size: 10px;
+    height: 30px;
+}
+
+.last_name label {
+    display: inline;
+}
+
+.last_name input {
+    margin: 0;
+}
+
+#genderDiv div {
+    /* width: 50%; */
+    display: flex;
+    gap: 10px;
+}
+
+#genderDiv span {
+
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#genderDiv div input {
+    width: 20px;
+}
+
+#gender_label {
+    display: flex;
+
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.CV input {
+    background-color: transparent !important;
+}
+
+button {
+    margin-top: 5px;
+    background-color: rgb(255, 69, 13);
+    border: none;
+    color: ghostwhite;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 9px;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}
+
+button:hover {
+    background-color: rgb(251, 255, 0);
+    color: rgb(0, 0, 0);
+    transition: 0.4s ease-out;
+}

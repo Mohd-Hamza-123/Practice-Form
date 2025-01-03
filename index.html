@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="container">
+            <h1>Job Application</h1>
+            <form>
+                <div class="Top">
+                    <div class="first_name">
+                        <label for="100">First Name : </label>
+                        <input class="pad" type="text" placeholder="Enter First Name" id="100">
+                    </div>
+                    <div class="last_name">
+                        <label for="101">Last Name : </label>
+                        <input class="pad" type="text" placeholder="Enter Last Name" id="101">
+                    </div>
+                </div>
+                <div class="Top">
+                    <div class="e-mail">
+                        <label for="102">E-mail : </label>
+                        <input class="pad" type="email" placeholder="Enter-Email" id="102">
+                    </div>
+                    <div class="job_role">
+                        <label for="job_role">Job Role : </label>
+                        <select name="Job_Role" id="job_role">
+                            <option value="" hidden>Select Job</option>
+                            <option value="">Tally</option>
+                            <option value="">Word</option>
+                            <option value="Full-Stack">Excel</option>
+                            <option value="Data Analyst">Power Point</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="address">
+                    <label for="address">Address
+                        :
+                    </label>
+                    <textarea id="address" placeholder="Enter Address">
+            </textarea>
+                </div>
+
+                <div class="Bottom">
+                    <div class="City">
+                        <label for="103">City : </label>
+
+                        <input class="pad" type="text" placeholder="City Name" id="103">
+
+                    </div>
+                    <div class="Pincode">
+                        <label for="104">Pin-Code : </label>
+
+                        <input class="pad" type="number" placeholder="Enter Pin Code" id="104">
+
+                    </div>
+                </div>
+
+                <div class="Bottom" id="date_bottom">
+                    <div class="Date">
+                        <label for="105">Date : </label>
+
+                        <input class="pad" value="DD/MM/YYYY" type="date" id="105">
+
+                    </div>
+                    <div class="CV">
+                        <label for="106">Resume : </label>
+                        <input class="pad resume" multiple id="106" type="file" id="106">
+
+                    </div>
+                </div>
+
+                <div id="genderDiv">
+                    <span>Gender : </span>
+                    <div id="gender_label">
+                        <div>
+                            <label for="Male">Male</label>
+                            <input type="radio" name="gender" id="Male">
+                        </div>
+                        <div>
+                            <label for="Female">Female</label>
+                            <input type="radio" name="gender" id="Female">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="button">
+                    <button type="submit">Apply Now</button>
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
